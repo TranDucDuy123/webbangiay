@@ -150,7 +150,7 @@
     <Compile Include="Controllers\QuanLySanPhamController.cs" />
     <Compile Include="Controllers\QuanLyThanhVienController.cs" />
     <Compile Include="Controllers\SanPhamController.cs" />
-    <Compile Include="Controllers\ThongKeController.cs" />
+    <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\TimKiemController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -2627,7 +2627,7 @@
     <Content Include="Views\QuanLyDonHang\ChuaGiao.cshtml" />
     <Content Include="Views\QuanLyDonHang\DaGiaoDaThanhToan.cshtml" />
     <Content Include="Views\QuanLyDonHang\DuyetDonHang.cshtml" />
-    <Content Include="Views\ThongKe\Index.cshtml" />
+    <Content Include="Views\Admin\Index.cshtml" />
     <Content Include="Views\Home\LoiPhanquyen.cshtml" />
     <Content Include="Views\PhanQuyen\Index.cshtml" />
     <Content Include="Views\PhanQuyen\PhanQuyen.cshtml" />
@@ -2645,7 +2645,7 @@
     <Content Include="Views\QuanLyThanhVien\ChinhSua.cshtml" />
     <Content Include="Views\QuanLyThanhVien\Xoa.cshtml" />
     <Content Include="Views\QuanLySanPham\UploadHinh.cshtml" />
-    <Content Include="Views\ThongKe\DangkyAdmin.cshtml" />
+    <Content Include="Views\Admin\DangkyAdmin.cshtml" />
     <Content Include="Views\Layout\_AdminHeaderPartial.cshtml" />
     <Content Include="Views\QuanLyPhieuNhap\DSSPHetHang.cshtml" />
     <Content Include="Views\QuanLyPhieuNhap\NhapHangDon.cshtml" />

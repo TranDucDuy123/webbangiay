@@ -24,7 +24,7 @@
                     ThanhVien tv = (ThanhVien)Session["TaiKhoan"];     //ép kiểu từ biến session thành biến tv để lấy ra thông tin
                     if (tv.MaLoaiTV == 1)
                     {
-                        <li style="display:inline;"><a class="lock" href="@Url.Action("Index", "ThongKe")">Trang quản lý</a></li>
+                        <li style="display:inline;"><a class="lock" href="@Url.Action("Index", "Admin")">Trang quản lý</a></li>
                     }
 
                     <li style="display:inline; color:white; font-size:17px; margin-right:15px;">Chào @tv.HoTen </li>
@@ -70,8 +70,8 @@
                     <p><a href="#">Quên mật khẩu?</a></p>
                     <h3 id="ThongBao" style="font-weight:bold; color:crimson; text-align:left"></h3>
                     <ul class="login-buttons">
-                        <li><input type="submit" class="btn-summit" value="Đăng nhập" style="height: 51px; width: 199px;" /></li>
-                        <li><a href="#" class="btn-summit hvr-sweep-to-left" style="min-width: 150px; height: 47px; font-size: 16px; text-decoration:none">đăng ký</a></li>
+                        <li><input type="submit" class="btn-summit" value="Đăng nhập" style="height: 60px; width: 150px;" /></li>
+                        <li><a href="#" class="btn-summit hvr-sweep-to-left" style="min-width: 150px; height: 60px; font-size: 16px; text-decoration:none">đăng ký</a></li>
                     </ul>
                 }
             </div>

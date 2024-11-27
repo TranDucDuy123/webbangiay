@@ -1,58 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\download\\Websitegiaydep\\Websitegiaydep\\Websitegiaydep\\",
+  "WorkspaceRootPath": "D:\\project\\Websitegiaydep\\Websitegiaydep\\Websitegiaydep\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2406F609-BEDD-49F9-9BA0-04DD459D5FA7}|WebsiteBanHang\\WebsiteBanHang.csproj|d:\\download\\websitegiaydep\\websitegiaydep\\websitegiaydep\\websitebanhang\\models\\quanlybanhangmodel.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
-      "RelativeMoniker": "D:0:0:{2406F609-BEDD-49F9-9BA0-04DD459D5FA7}|WebsiteBanHang\\WebsiteBanHang.csproj|solutionrelative:websitebanhang\\models\\quanlybanhangmodel.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
+      "AbsoluteMoniker": "D:0:0:{2406F609-BEDD-49F9-9BA0-04DD459D5FA7}|WebsiteBanHang\\WebsiteBanHang.csproj|d:\\project\\websitegiaydep\\websitegiaydep\\websitegiaydep\\websitebanhang\\controllers\\sanphamcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2406F609-BEDD-49F9-9BA0-04DD459D5FA7}|WebsiteBanHang\\WebsiteBanHang.csproj|solutionrelative:websitebanhang\\controllers\\sanphamcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2406F609-BEDD-49F9-9BA0-04DD459D5FA7}|WebsiteBanHang\\WebsiteBanHang.csproj|d:\\download\\websitegiaydep\\websitegiaydep\\websitegiaydep\\websitebanhang\\views\\sanpham\\loaisanpham.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2406F609-BEDD-49F9-9BA0-04DD459D5FA7}|WebsiteBanHang\\WebsiteBanHang.csproj|solutionrelative:websitebanhang\\views\\sanpham\\loaisanpham.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2406F609-BEDD-49F9-9BA0-04DD459D5FA7}|WebsiteBanHang\\WebsiteBanHang.csproj|D:\\download\\Websitegiaydep\\Websitegiaydep\\Websitegiaydep\\websitebanhang\\views\\layout\\homelayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2406F609-BEDD-49F9-9BA0-04DD459D5FA7}|WebsiteBanHang\\WebsiteBanHang.csproj|solutionrelative:websitebanhang\\views\\layout\\homelayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2406F609-BEDD-49F9-9BA0-04DD459D5FA7}|WebsiteBanHang\\WebsiteBanHang.csproj|D:\\download\\Websitegiaydep\\Websitegiaydep\\Websitegiaydep\\websitebanhang\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2406F609-BEDD-49F9-9BA0-04DD459D5FA7}|WebsiteBanHang\\WebsiteBanHang.csproj|solutionrelative:websitebanhang\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2406F609-BEDD-49F9-9BA0-04DD459D5FA7}|WebsiteBanHang\\WebsiteBanHang.csproj|D:\\download\\Websitegiaydep\\Websitegiaydep\\Websitegiaydep\\websitebanhang\\views\\layout\\productlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{2406F609-BEDD-49F9-9BA0-04DD459D5FA7}|WebsiteBanHang\\WebsiteBanHang.csproj|d:\\project\\websitegiaydep\\websitegiaydep\\websitegiaydep\\websitebanhang\\views\\layout\\productlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{2406F609-BEDD-49F9-9BA0-04DD459D5FA7}|WebsiteBanHang\\WebsiteBanHang.csproj|solutionrelative:websitebanhang\\views\\layout\\productlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2406F609-BEDD-49F9-9BA0-04DD459D5FA7}|WebsiteBanHang\\WebsiteBanHang.csproj|D:\\download\\Websitegiaydep\\Websitegiaydep\\Websitegiaydep\\websitebanhang\\content\\css\\memenu.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{2406F609-BEDD-49F9-9BA0-04DD459D5FA7}|WebsiteBanHang\\WebsiteBanHang.csproj|solutionrelative:websitebanhang\\content\\css\\memenu.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{2406F609-BEDD-49F9-9BA0-04DD459D5FA7}|WebsiteBanHang\\WebsiteBanHang.csproj|d:\\project\\websitegiaydep\\websitegiaydep\\websitegiaydep\\websitebanhang\\views\\home\\menupartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2406F609-BEDD-49F9-9BA0-04DD459D5FA7}|WebsiteBanHang\\WebsiteBanHang.csproj|solutionrelative:websitebanhang\\views\\home\\menupartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2406F609-BEDD-49F9-9BA0-04DD459D5FA7}|WebsiteBanHang\\WebsiteBanHang.csproj|D:\\download\\Websitegiaydep\\Websitegiaydep\\Websitegiaydep\\websitebanhang\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2406F609-BEDD-49F9-9BA0-04DD459D5FA7}|WebsiteBanHang\\WebsiteBanHang.csproj|solutionrelative:websitebanhang\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{2406F609-BEDD-49F9-9BA0-04DD459D5FA7}|WebsiteBanHang\\WebsiteBanHang.csproj|d:\\project\\websitegiaydep\\websitegiaydep\\websitegiaydep\\websitebanhang\\views\\sanpham\\sanpham.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2406F609-BEDD-49F9-9BA0-04DD459D5FA7}|WebsiteBanHang\\WebsiteBanHang.csproj|solutionrelative:websitebanhang\\views\\sanpham\\sanpham.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2406F609-BEDD-49F9-9BA0-04DD459D5FA7}|WebsiteBanHang\\WebsiteBanHang.csproj|D:\\download\\Websitegiaydep\\Websitegiaydep\\Websitegiaydep\\websitebanhang\\content\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{2406F609-BEDD-49F9-9BA0-04DD459D5FA7}|WebsiteBanHang\\WebsiteBanHang.csproj|solutionrelative:websitebanhang\\content\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2406F609-BEDD-49F9-9BA0-04DD459D5FA7}|WebsiteBanHang\\WebsiteBanHang.csproj|D:\\download\\Websitegiaydep\\Websitegiaydep\\Websitegiaydep\\websitebanhang\\content\\css\\home_style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{2406F609-BEDD-49F9-9BA0-04DD459D5FA7}|WebsiteBanHang\\WebsiteBanHang.csproj|solutionrelative:websitebanhang\\content\\css\\home_style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2406F609-BEDD-49F9-9BA0-04DD459D5FA7}|WebsiteBanHang\\WebsiteBanHang.csproj|D:\\download\\Websitegiaydep\\Websitegiaydep\\Websitegiaydep\\websitebanhang\\content\\css\\flexslider.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{2406F609-BEDD-49F9-9BA0-04DD459D5FA7}|WebsiteBanHang\\WebsiteBanHang.csproj|solutionrelative:websitebanhang\\content\\css\\flexslider.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2406F609-BEDD-49F9-9BA0-04DD459D5FA7}|WebsiteBanHang\\WebsiteBanHang.csproj|D:\\download\\Websitegiaydep\\Websitegiaydep\\Websitegiaydep\\websitebanhang\\views\\layout\\headertoppartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2406F609-BEDD-49F9-9BA0-04DD459D5FA7}|WebsiteBanHang\\WebsiteBanHang.csproj|solutionrelative:websitebanhang\\views\\layout\\headertoppartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2406F609-BEDD-49F9-9BA0-04DD459D5FA7}|WebsiteBanHang\\WebsiteBanHang.csproj|D:\\download\\Websitegiaydep\\Websitegiaydep\\Websitegiaydep\\websitebanhang\\views\\layout\\_layoutcommon.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2406F609-BEDD-49F9-9BA0-04DD459D5FA7}|WebsiteBanHang\\WebsiteBanHang.csproj|solutionrelative:websitebanhang\\views\\layout\\_layoutcommon.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2406F609-BEDD-49F9-9BA0-04DD459D5FA7}|WebsiteBanHang\\WebsiteBanHang.csproj|D:\\download\\Websitegiaydep\\Websitegiaydep\\Websitegiaydep\\websitebanhang\\views\\sanpham\\sanphamstyle2partial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2406F609-BEDD-49F9-9BA0-04DD459D5FA7}|WebsiteBanHang\\WebsiteBanHang.csproj|solutionrelative:websitebanhang\\views\\sanpham\\sanphamstyle2partial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{2406F609-BEDD-49F9-9BA0-04DD459D5FA7}|WebsiteBanHang\\WebsiteBanHang.csproj|d:\\project\\websitegiaydep\\websitegiaydep\\websitegiaydep\\websitebanhang\\views\\sanpham\\loaisanpham.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2406F609-BEDD-49F9-9BA0-04DD459D5FA7}|WebsiteBanHang\\WebsiteBanHang.csproj|solutionrelative:websitebanhang\\views\\sanpham\\loaisanpham.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -67,169 +35,66 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "QuanLyBanHangModel.edmx [Diagram1]",
-              "DocumentMoniker": "D:\\download\\Websitegiaydep\\Websitegiaydep\\Websitegiaydep\\WebsiteBanHang\\Models\\QuanLyBanHangModel.edmx",
-              "RelativeDocumentMoniker": "WebsiteBanHang\\Models\\QuanLyBanHangModel.edmx",
-              "ToolTip": "D:\\download\\Websitegiaydep\\Websitegiaydep\\Websitegiaydep\\WebsiteBanHang\\Models\\QuanLyBanHangModel.edmx [Diagram1]",
-              "RelativeToolTip": "WebsiteBanHang\\Models\\QuanLyBanHangModel.edmx [Diagram1]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
-              "WhenOpened": "2024-11-21T01:41:30.639Z",
-              "EditorCaption": " [Diagram1]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "LoaiSanPham.cshtml",
-              "DocumentMoniker": "D:\\download\\Websitegiaydep\\Websitegiaydep\\Websitegiaydep\\WebsiteBanHang\\Views\\SanPham\\LoaiSanPham.cshtml",
-              "RelativeDocumentMoniker": "WebsiteBanHang\\Views\\SanPham\\LoaiSanPham.cshtml",
-              "ToolTip": "D:\\download\\Websitegiaydep\\Websitegiaydep\\Websitegiaydep\\WebsiteBanHang\\Views\\SanPham\\LoaiSanPham.cshtml",
-              "RelativeToolTip": "WebsiteBanHang\\Views\\SanPham\\LoaiSanPham.cshtml",
-              "ViewState": "AQIAABgAAAAAAAAAAAAAACMAAAAlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-20T22:08:14.184Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "D:\\download\\Websitegiaydep\\Websitegiaydep\\Websitegiaydep\\WebsiteBanHang\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "WebsiteBanHang\\Controllers\\HomeController.cs",
-              "ToolTip": "D:\\download\\Websitegiaydep\\Websitegiaydep\\Websitegiaydep\\WebsiteBanHang\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "WebsiteBanHang\\Controllers\\HomeController.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAAwCIAAAAZAAAA",
+              "Title": "SanPhamController.cs",
+              "DocumentMoniker": "D:\\project\\Websitegiaydep\\Websitegiaydep\\Websitegiaydep\\WebsiteBanHang\\Controllers\\SanPhamController.cs",
+              "RelativeDocumentMoniker": "WebsiteBanHang\\Controllers\\SanPhamController.cs",
+              "ToolTip": "D:\\project\\Websitegiaydep\\Websitegiaydep\\Websitegiaydep\\WebsiteBanHang\\Controllers\\SanPhamController.cs",
+              "RelativeToolTip": "WebsiteBanHang\\Controllers\\SanPhamController.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAowB8AAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-20T22:05:41.239Z",
+              "WhenOpened": "2024-11-27T13:45:54.517Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "ProductLayout.cshtml",
-              "DocumentMoniker": "D:\\download\\Websitegiaydep\\Websitegiaydep\\Websitegiaydep\\WebsiteBanHang\\Views\\Layout\\ProductLayout.cshtml",
-              "RelativeDocumentMoniker": "WebsiteBanHang\\Views\\Layout\\ProductLayout.cshtml",
-              "ToolTip": "D:\\download\\Websitegiaydep\\Websitegiaydep\\Websitegiaydep\\WebsiteBanHang\\Views\\Layout\\ProductLayout.cshtml",
-              "RelativeToolTip": "WebsiteBanHang\\Views\\Layout\\ProductLayout.cshtml",
-              "ViewState": "AQIAAGkAAAAAAAAAAAAAAJkAAAAeAAAA",
+              "Title": "LoaiSanPham.cshtml",
+              "DocumentMoniker": "D:\\project\\Websitegiaydep\\Websitegiaydep\\Websitegiaydep\\WebsiteBanHang\\Views\\SanPham\\LoaiSanPham.cshtml",
+              "RelativeDocumentMoniker": "WebsiteBanHang\\Views\\SanPham\\LoaiSanPham.cshtml",
+              "ToolTip": "D:\\project\\Websitegiaydep\\Websitegiaydep\\Websitegiaydep\\WebsiteBanHang\\Views\\SanPham\\LoaiSanPham.cshtml",
+              "RelativeToolTip": "WebsiteBanHang\\Views\\SanPham\\LoaiSanPham.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAzAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-20T22:02:18.197Z",
+              "WhenOpened": "2024-11-27T13:43:29.127Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "memenu.css",
-              "DocumentMoniker": "D:\\download\\Websitegiaydep\\Websitegiaydep\\Websitegiaydep\\WebsiteBanHang\\Content\\css\\memenu.css",
-              "RelativeDocumentMoniker": "WebsiteBanHang\\Content\\css\\memenu.css",
-              "ToolTip": "D:\\download\\Websitegiaydep\\Websitegiaydep\\Websitegiaydep\\WebsiteBanHang\\Content\\css\\memenu.css",
-              "RelativeToolTip": "WebsiteBanHang\\Content\\css\\memenu.css",
-              "ViewState": "AQIAAFoAAAAAAAAAAAAAADoAAAAPAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-11-20T21:57:40.258Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "style.css",
-              "DocumentMoniker": "D:\\download\\Websitegiaydep\\Websitegiaydep\\Websitegiaydep\\WebsiteBanHang\\Content\\css\\style.css",
-              "RelativeDocumentMoniker": "WebsiteBanHang\\Content\\css\\style.css",
-              "ToolTip": "D:\\download\\Websitegiaydep\\Websitegiaydep\\Websitegiaydep\\WebsiteBanHang\\Content\\css\\style.css",
-              "RelativeToolTip": "WebsiteBanHang\\Content\\css\\style.css",
-              "ViewState": "AQIAAMEAAAAAAAAAAAAqwNEAAAAKAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-11-20T21:56:26.446Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "flexslider.css",
-              "DocumentMoniker": "D:\\download\\Websitegiaydep\\Websitegiaydep\\Websitegiaydep\\WebsiteBanHang\\Content\\css\\flexslider.css",
-              "RelativeDocumentMoniker": "WebsiteBanHang\\Content\\css\\flexslider.css",
-              "ToolTip": "D:\\download\\Websitegiaydep\\Websitegiaydep\\Websitegiaydep\\WebsiteBanHang\\Content\\css\\flexslider.css",
-              "RelativeToolTip": "WebsiteBanHang\\Content\\css\\flexslider.css",
-              "ViewState": "AQIAAHIAAAAAAAAAAAAAAIMAAAAnAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-11-20T21:37:30.029Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Home_style.css",
-              "DocumentMoniker": "D:\\download\\Websitegiaydep\\Websitegiaydep\\Websitegiaydep\\WebsiteBanHang\\Content\\css\\Home_style.css",
-              "RelativeDocumentMoniker": "WebsiteBanHang\\Content\\css\\Home_style.css",
-              "ToolTip": "D:\\download\\Websitegiaydep\\Websitegiaydep\\Websitegiaydep\\WebsiteBanHang\\Content\\css\\Home_style.css",
-              "RelativeToolTip": "WebsiteBanHang\\Content\\css\\Home_style.css",
-              "ViewState": "AQIAAMMAAAAAAAAAAAAswNYAAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-11-20T21:34:21.021Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "_LayoutCommon.cshtml",
-              "DocumentMoniker": "D:\\download\\Websitegiaydep\\Websitegiaydep\\Websitegiaydep\\WebsiteBanHang\\Views\\Layout\\_LayoutCommon.cshtml",
-              "RelativeDocumentMoniker": "WebsiteBanHang\\Views\\Layout\\_LayoutCommon.cshtml",
-              "ToolTip": "D:\\download\\Websitegiaydep\\Websitegiaydep\\Websitegiaydep\\WebsiteBanHang\\Views\\Layout\\_LayoutCommon.cshtml",
-              "RelativeToolTip": "WebsiteBanHang\\Views\\Layout\\_LayoutCommon.cshtml",
-              "ViewState": "AQIAAIQAAAAAAAAAAAAAAJkAAAAeAAAA",
+              "DocumentIndex": 3,
+              "Title": "SanPham.cshtml",
+              "DocumentMoniker": "D:\\project\\Websitegiaydep\\Websitegiaydep\\Websitegiaydep\\WebsiteBanHang\\Views\\SanPham\\SanPham.cshtml",
+              "RelativeDocumentMoniker": "WebsiteBanHang\\Views\\SanPham\\SanPham.cshtml",
+              "ToolTip": "D:\\project\\Websitegiaydep\\Websitegiaydep\\Websitegiaydep\\WebsiteBanHang\\Views\\SanPham\\SanPham.cshtml",
+              "RelativeToolTip": "WebsiteBanHang\\Views\\SanPham\\SanPham.cshtml",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAIAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-20T21:24:48.935Z",
+              "WhenOpened": "2024-11-27T13:43:19.639Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "HomeLayout.cshtml",
-              "DocumentMoniker": "D:\\download\\Websitegiaydep\\Websitegiaydep\\Websitegiaydep\\WebsiteBanHang\\Views\\Layout\\HomeLayout.cshtml",
-              "RelativeDocumentMoniker": "WebsiteBanHang\\Views\\Layout\\HomeLayout.cshtml",
-              "ToolTip": "D:\\download\\Websitegiaydep\\Websitegiaydep\\Websitegiaydep\\WebsiteBanHang\\Views\\Layout\\HomeLayout.cshtml",
-              "RelativeToolTip": "WebsiteBanHang\\Views\\Layout\\HomeLayout.cshtml",
-              "ViewState": "AQIAADoAAAAAAAAAAADwv2AAAAAVAAAA",
+              "Title": "MenuPartial.cshtml",
+              "DocumentMoniker": "D:\\project\\Websitegiaydep\\Websitegiaydep\\Websitegiaydep\\WebsiteBanHang\\Views\\Home\\MenuPartial.cshtml",
+              "RelativeDocumentMoniker": "WebsiteBanHang\\Views\\Home\\MenuPartial.cshtml",
+              "ToolTip": "D:\\project\\Websitegiaydep\\Websitegiaydep\\Websitegiaydep\\WebsiteBanHang\\Views\\Home\\MenuPartial.cshtml",
+              "RelativeToolTip": "WebsiteBanHang\\Views\\Home\\MenuPartial.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-20T21:21:53.81Z",
+              "WhenOpened": "2024-11-27T13:31:11.986Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "HeaderTopPartial.cshtml",
-              "DocumentMoniker": "D:\\download\\Websitegiaydep\\Websitegiaydep\\Websitegiaydep\\WebsiteBanHang\\Views\\Layout\\HeaderTopPartial.cshtml",
-              "RelativeDocumentMoniker": "WebsiteBanHang\\Views\\Layout\\HeaderTopPartial.cshtml",
-              "ToolTip": "D:\\download\\Websitegiaydep\\Websitegiaydep\\Websitegiaydep\\WebsiteBanHang\\Views\\Layout\\HeaderTopPartial.cshtml",
-              "RelativeToolTip": "WebsiteBanHang\\Views\\Layout\\HeaderTopPartial.cshtml",
-              "ViewState": "AQIAAIEAAAAAAAAAAAAAAIQAAAAvAAAA",
+              "DocumentIndex": 1,
+              "Title": "ProductLayout.cshtml",
+              "DocumentMoniker": "D:\\project\\Websitegiaydep\\Websitegiaydep\\Websitegiaydep\\WebsiteBanHang\\Views\\Layout\\ProductLayout.cshtml",
+              "RelativeDocumentMoniker": "WebsiteBanHang\\Views\\Layout\\ProductLayout.cshtml",
+              "ToolTip": "D:\\project\\Websitegiaydep\\Websitegiaydep\\Websitegiaydep\\WebsiteBanHang\\Views\\Layout\\ProductLayout.cshtml",
+              "RelativeToolTip": "WebsiteBanHang\\Views\\Layout\\ProductLayout.cshtml",
+              "ViewState": "AQIAAFcAAAAAAAAAAAAAAG4AAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-20T21:21:31.9Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\download\\Websitegiaydep\\Websitegiaydep\\Websitegiaydep\\WebsiteBanHang\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "WebsiteBanHang\\Views\\Home\\Index.cshtml",
-              "ToolTip": "D:\\download\\Websitegiaydep\\Websitegiaydep\\Websitegiaydep\\WebsiteBanHang\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "WebsiteBanHang\\Views\\Home\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAXAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-20T21:17:32.046Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "SanPhamStyle2Partial.cshtml",
-              "DocumentMoniker": "D:\\download\\Websitegiaydep\\Websitegiaydep\\Websitegiaydep\\WebsiteBanHang\\Views\\SanPham\\SanPhamStyle2Partial.cshtml",
-              "RelativeDocumentMoniker": "WebsiteBanHang\\Views\\SanPham\\SanPhamStyle2Partial.cshtml",
-              "ToolTip": "D:\\download\\Websitegiaydep\\Websitegiaydep\\Websitegiaydep\\WebsiteBanHang\\Views\\SanPham\\SanPhamStyle2Partial.cshtml",
-              "RelativeToolTip": "WebsiteBanHang\\Views\\SanPham\\SanPhamStyle2Partial.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAABSAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-20T21:12:43.287Z",
+              "WhenOpened": "2024-11-27T13:26:49.019Z",
               "EditorCaption": ""
             }
           ]
