@@ -1,6 +1,4 @@
-﻿@using WebsiteBanHang.Models
-@model IEnumerable<SanPham>
-<html>
+﻿<html>
 <head>
     <title>@ViewBag.title</title>
     <link href="~/Content/ProductLayout/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
@@ -54,26 +52,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <div class="container">
             <div class="col-md-3 product-price">
 
-                <div class=" rsidebar span_1_of_left">
-                    <div class="of-left">
-                        <h3 class="cate">Hãng bán chạy nhất</h3>
-                    </div>
-                    <ul class="menu">
-                        <li class="item1">
-                            <a href="#">Puma </a>
-                        </li>
-                        <li class="item2">
-                            <a href="#">Bitis</a>
-                        </li>
-                        <li class="item3">
-                            <a href="#">LV</a>
-                        </li>
-                        <li class="item4">
-                            <a href="#">Vans</a>
-                        </li>
-
-                    </ul>
-                </div>
+                
                 <!--initiate accordion-->
                 <script type="text/javascript">
                     $(function () {
@@ -94,79 +73,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
                     });
                 </script>
-                <!---->
-                <div class="sellers">
-                    <div class="of-left-in">
-                        <h3 class="tag">Thẻ</h3>
-                    </div>
-                    <div class="tags">
-                        <ul>
-                            @foreach (var groupItem in Model.GroupBy(n => n.LoaiSanPham))  //gom nhóm lại theo từng loại sp( là gom nhóm lại những cái trùng nhau)
-                            {
-                                if (groupItem.Key != null)  //key đại diện cho thuộc tính đc gom nhóm
-                                {
-                                    <li>
-                                        <a class="color1" href="@Url.Action("LoaiSanPham","SanPham",new { @MaLoaiSP = groupItem.Key.MaLoaiSP})">@groupItem.Key.TenLoai</a>
-                                    </li>
-                                }
-                            }
-                            <li><a href="#">Vans</a></li>
-                            <li><a href="#">MWC</a></li>
-                            <li><a href="#">Bitis</a></li>
-                            <li><a href="#">Nike</a></li>
-                            <li><a href="#">Puma</a></li>
-                            <li><a href="#">Balen</a></li>
-                            <li><a href="#">Conver</a></li>
-                            <li><a href="#">MSI</a></li>
-                            <li><a href="#">LV</a></li>
-                            <li><a href="#">VN</a></li>
-                            <li><a href="#">HQ</a></li>
-                            <li><a href="#">China</a></li>
+                
 
-                            <div class="clearfix"> </div>
-                        </ul>
-                    </div>
-                </div><!---->
-                <div class="product-bottom">
-                    <div class="of-left-in">
-                        <h3 class="best">Bán chạy</h3>
-                    </div>
-                    <div class="product-go">
-                        <div class=" fashion-grid">
-                            <a href="#"><img class="img-responsive " src="~/Content/HinhAnhSP/sp1.jpg" alt=""></a>
-
-                        </div>
-                        <div class=" fashion-grid1">
-                            <h6 class="best2">
-                                <a href="#">
-                                    Vans
-                                </a>
-                            </h6>
-
-                            <span class=" price-in1"> 3000000</span>
-                        </div>
-
-                        <div class="clearfix"> </div>
-                    </div>
-                    <div class="product-go">
-                        <div class=" fashion-grid">
-                            <a href="#"><img class="img-responsive " src="~/Content/HinhAnhSP/sp2.jpg" alt=""></a>
-
-                        </div>
-                        <div class="fashion-grid1">
-                            <h6 class="best2">
-                                <a href="#">
-                                    Giày tây
-                                </a>
-                            </h6>
-
-                            <span class=" price-in1"> 1300000</span>
-                        </div>
-
-                        <div class="clearfix"> </div>
-                    </div>
-
-                </div>
 
             </div>
             @RenderBody()
