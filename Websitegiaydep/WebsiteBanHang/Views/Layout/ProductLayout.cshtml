@@ -49,37 +49,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <!--content-->
     <!---->
     <div class="product">
-        <div class="container">
-            <div class="col-md-3 product-price">
-
-                
-                <!--initiate accordion-->
-                <script type="text/javascript">
-                    $(function () {
-                        var menu_ul = $('.menu > li > ul'),
-                            menu_a = $('.menu > li > a');
-                        menu_ul.hide();
-                        menu_a.click(function (e) {
-                            e.preventDefault();
-                            if (!$(this).hasClass('active')) {
-                                menu_a.removeClass('active');
-                                menu_ul.filter(':visible').slideUp('normal');
-                                $(this).addClass('active').next().stop(true, true).slideDown('normal');
-                            } else {
-                                $(this).removeClass('active');
-                                $(this).next().stop(true, true).slideUp('normal');
-                            }
-                        });
-
-                    });
-                </script>
-                
-
-
-            </div>
+        <div class="container d-flex justify-content-center" >
             @RenderBody()
-
-
             <div class="clearfix"> </div>
         </div>
     </div>
@@ -87,7 +58,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <div class="footer">
         <div class="container">
             <div class="footer-top-at">
-
                 <div class="col-md-4 amet-sed">
                     <h4>Thông Tin Chung</h4>
                     <ul class="nav-bottom">

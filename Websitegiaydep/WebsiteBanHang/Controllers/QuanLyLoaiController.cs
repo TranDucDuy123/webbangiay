@@ -81,20 +81,44 @@ namespace WebsiteBanHang.Controllers
         [HttpPost]
         public ActionResult Xoa(int id)
         {
-            //lấy sp cần chỉnh sửa
-            if (id == null)
+            // Kiểm tra xem id có hợp lệ không
+            if (id == 0)
             {
                 return new HttpStatusCodeResult(System.Net.HttpStatusCode.BadRequest);
             }
+
+            // Tìm loại sản phẩm cần xóa
             LoaiSanPham loaisp = db.LoaiSanPhams.SingleOrDefault(n => n.MaLoaiSP == id);
             if (loaisp == null)
             {
                 return HttpNotFound();
             }
-            db.LoaiSanPhams.Remove(loaisp);
-            db.SaveChanges();
 
-            return RedirectToAction("Index");
+            // Kiểm tra xem có sản phẩm nào thuộc loại này không
+            bool hasProducts = db.SanPhams.Any(sp => sp.MaLoaiSP == id);
+            if (hasProducts)
+            {
+                // Nếu có sản phẩm đang thuộc loại này, trả về thông báo lỗi
+                TempData["ErrorMessage"] = "Không thể xóa loại sản phẩm này vì có sản phẩm đang thuộc loại này!";
+                return RedirectToAction("Xoa");
+            }
+
+            try
+            {
+                // Nếu không có sản phẩm thuộc loại này, tiến hành xóa
+                TempData["ErrorMessage"] = null;
+                db.LoaiSanPhams.Remove(loaisp);
+                db.SaveChanges();
+
+                // Quay lại trang danh sách
+                return RedirectToAction("Index");
+            }
+            catch (Exception ex)
+            {
+                // Xử lý lỗi trong quá trình xóa
+                TempData["ErrorMessage"] = "Xóa loại sản phẩm không thành công. Lỗi: " + ex.Message;
+                return RedirectToAction("Xoa");
+            }
         }
 
 

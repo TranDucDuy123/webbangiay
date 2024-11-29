@@ -81,19 +81,38 @@ namespace WebsiteBanHang.Controllers
         [HttpPost]
         public ActionResult Xoa(int id)
         {
-            //lấy sp cần chỉnh sửa
+            // Kiểm tra nếu id không hợp lệ
             if (id == null)
             {
                 return new HttpStatusCodeResult(System.Net.HttpStatusCode.BadRequest);
             }
+
+            // Lấy thông tin nhà sản xuất từ database
             NhaSanXuat nsx = db.NhaSanXuats.SingleOrDefault(n => n.MaNSX == id);
+
+            // Kiểm tra nếu nhà sản xuất không tồn tại
             if (nsx == null)
             {
                 return HttpNotFound();
             }
+
+            // Kiểm tra xem nhà sản xuất này có phiếu nhập liên quan không
+            bool hasPhieuNhap = db.PhieuNhaps.Any(pn => pn.MaNCC == id);
+
+            if (hasPhieuNhap)
+            {
+                // Nếu có phiếu nhập liên quan, không cho xóa và thông báo lỗi
+                TempData["ErrorMessage"] = "Không thể xóa nhà sản xuất này vì có phiếu nhập liên quan!";
+                return RedirectToAction("Xoa");
+            }
+
+            
+            // Nếu không có phiếu nhập, thực hiện xóa nhà sản xuất
+            TempData["ErrorMessage"] = null;
             db.NhaSanXuats.Remove(nsx);
             db.SaveChanges();
 
+            // Quay lại trang danh sách sau khi xóa thành công
             return RedirectToAction("Index");
         }
 

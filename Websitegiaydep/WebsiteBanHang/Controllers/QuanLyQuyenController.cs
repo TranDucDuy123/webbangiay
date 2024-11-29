@@ -76,24 +76,50 @@ namespace WebsiteBanHang.Controllers
             return View(quyen);
         }
 
-        [HttpPost, ActionName("Xoa")]   //trùng tên
+        [HttpPost, ActionName("Xoa")]
         public ActionResult XacNhanXoa(string id)
         {
-            //lấy sp cần chỉnh sửa
-            if (id == null)
+            // Kiểm tra xem id có hợp lệ không
+            if (string.IsNullOrEmpty(id))
             {
                 return new HttpStatusCodeResult(System.Net.HttpStatusCode.BadRequest);
             }
+
+            // Tìm quyền cần xóa
             Quyen quyen = db.Quyens.SingleOrDefault(n => n.MaQuyen == id);
             if (quyen == null)
             {
                 return HttpNotFound();
             }
-            db.Quyens.Remove(quyen);
-            db.SaveChanges();
 
-            return RedirectToAction("Index");
+            try
+            {
+                // Kiểm tra xem quyền có đang được sử dụng trong bảng LoaiThanhVien_Quyen không
+                bool isRoleInUse = db.LoaiThanhVien_Quyen.Any(l => l.MaQuyen == id);
+
+                if (isRoleInUse)
+                {
+                    // Nếu quyền đang được sử dụng trong bảng LoaiThanhVien_Quyen, trả về thông báo lỗi
+                    TempData["ErrorMessage"] = "Không thể xóa quyền này vì quyền này đang được gán cho loại thành viên!";
+                    return RedirectToAction("Xoa", new { id = id });
+                }
+
+                // Nếu quyền không được sử dụng, thực hiện xóa quyền
+                db.Quyens.Remove(quyen);
+                db.SaveChanges();
+                TempData["ErrorMessage"] = null;
+                // Quay lại trang danh sách quyền nếu xóa thành công
+                return RedirectToAction("Index");
+            }
+            catch (Exception ex)
+            {
+                // Nếu có lỗi xảy ra trong quá trình xóa quyền, thông báo lỗi
+                TempData["ErrorMessage"] = "Xóa quyền không thành công! Lỗi: " + ex.Message;
+                return RedirectToAction("Xoa", new { id = id });
+            }
         }
+
+
 
     }
 }

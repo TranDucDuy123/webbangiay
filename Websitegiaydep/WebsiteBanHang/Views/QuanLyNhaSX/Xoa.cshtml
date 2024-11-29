@@ -9,6 +9,12 @@
     <div class="card-body">
         <h4 class="card-title">Thông tin nhà sản xuất</h4>
         <hr />
+        @if (TempData["ErrorMessage"] != null)
+        {
+            <div class="alert alert-danger">
+                @TempData["ErrorMessage"]
+            </div>
+        }
         <div class="row ">
             <label class="col-sm-2 col-form-label font-weight-bold">@Html.DisplayNameFor(model => model.MaNSX)</label>
             <div class="col-sm-6 col-form-label">@Html.DisplayFor(model => model.MaNSX)</div>
