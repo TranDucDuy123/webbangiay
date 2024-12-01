@@ -1,47 +1,32 @@
-﻿@using WebsiteBanHang.Models
+﻿@using WebsiteBanHang.Models;
 @model IEnumerable<SanPham>
 
 <style>
-    .b-from-top {
-        background: rgba(0, 0, 0, 0.64);
-    }
-
-    .content-top-bottom .col-md-6 h3 a {
-        text-decoration: none;
-        color: black;
-    }
-
-        .content-top-bottom .col-md-6 h3 a:hover {
-            color: rgba(239, 95, 33);
-        }
+    .col-md-4 .grid-top .nameSP a:hover {
+        rgba(239, 95, 33);}
 </style>
-
-<div class="content-top-bottom">
-    @if (Model != null && Model.Any()) // Kiểm tra nếu Model không rỗng
-    {
-        <h2><span>@Model.First().LoaiSanPham.TenLoai</span><span> mới nhất</span></h2>
-
-        <div class="col-md-6 men">
-            @* Lấy sản phẩm đầu tiên một cách an toàn *@
-            @if (Model.ElementAtOrDefault(0) != null)
-            {
-                var product = Model.ElementAtOrDefault(0); // Lấy sản phẩm đầu tiên một cách an toàn
-                <a href="@Url.RouteUrl("XemChiTiet", new { @id = product.MaSP, @tensp = product.TenSP })" class="b-link-stripe b-animate-go thickbox">
-                    <img class="img-responsive" src="@Url.Content("~/Content/HinhAnhSP/" + product.HinhAnh)" style="width:540px;height:429px" alt="">
+<div class="content-top">
+    <h1>
+        <!--dùng phương thức linq Lấy ra sp đầu tiên trong model,r lấy tên loại thông qua liên kết vs bảng loại sp-->
+        <span>@Model.First().LoaiSanPham.TenLoai</span> <span>mới nhất</span>
+    </h1>
+    <div class="grid-in">
+        @foreach (var item in Model.Take(6))
+        {
+            <div class="col-md-4 grid-top">
+                <a href="@Url.RouteUrl("XemChiTiet",new {@id=item.MaSP, @tensp = item.TenSP })" class="b-link-stripe b-animate-go  thickbox">
+                    <img class="img-responsive" src="@Url.Content("~/Content/HinhAnhSP/"+item.HinhAnh)" style="height: 390px; width:519px;" alt="">
                     <div class="b-wrapper">
-                        <h3 class="b-animate b-from-top top-in b-delay03">
-                            <span>@Html.Raw(product.Chitiet)</span>
-                        </h3>
+                        <h4 class="b-animate b-from-left    b-delay03 " style="text-align:left;font-size:13pt; font-weight:normal;padding:1em">
+                            @Html.Raw(item.Chitiet)
+                        </h4>
                     </div>
                 </a>
-                <h3>
-                    <a href="@Url.RouteUrl("XemChiTiet", new { @id = product.MaSP, @tensp = product.TenSP })">@product.TenSP</a>
-                </h3>
-            }
-        </div>
-    }
-    else
-    {
-        <p>Không có sản phẩm nào để hiển thị.</p>// Thông báo nếu Model trống
-    }
+
+                <p class="nameSP"><a href="@Url.RouteUrl("XemChiTiet",new {@id=item.MaSP, @tensp = item.TenSP })">@item.TenSP</a></p>
+            </div>
+        }
+        <div class="clearfix"> </div>
+    </div>
+
 </div>

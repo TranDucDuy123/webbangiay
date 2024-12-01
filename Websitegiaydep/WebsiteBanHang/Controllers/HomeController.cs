@@ -30,7 +30,7 @@ namespace WebsiteBanHang.Controllers
             ViewBag.ListPCM = lstPCM;
 
             //List dt mới
-            var lstDTM = db.SanPhams.Where(n => n.MaLoaiSP == 7 && n.Moi == 1 && n.DaXoa == false).ToList();
+            var lstDTM = db.SanPhams.Where(n => n.MaLoaiSP == 4 && n.Moi == 1 && n.DaXoa == false).ToList();
             //Gán vào viewbag
             ViewBag.ListDTM = lstDTM;
 
