@@ -96,18 +96,6 @@ namespace WebsiteBanHang.Controllers
         [HttpPost]
         public ActionResult DangNhap(FormCollection f)
         {
-            ////ktra tên dn và pass
-            //string sTaiKhoan = f["txtTenDangNhap"].ToString();  //lấy chuỗi trong txtTenDangNhap
-            //string sMatKhau = f["txtMatKhau"].ToString();   //lấy chuỗi trong txtMatKhau
-
-            //ThanhVien tv = db.ThanhViens.SingleOrDefault(n => n.TaiKhoan == sTaiKhoan && n.MatKhau == sMatKhau);    //so sánh với tk và mk trong csdl
-            //if(tv != null)
-            //{
-            //    Session["TaiKhoan"] = tv;   //tạo session tên TaiKhoan với giá trị là biến tv
-            //    return Content(@"<script>window.location.reload()</script>");   //đoạn script dùng để reload lại trang khi đăng nhập thành công
-            //}
-            //// khi đăng nhập sai xuất thông báo
-            //return Content("Tài khoản hoặc mật khẩu không chính xác.");
 
             //ktra tên dn và pass
             string taikhoan = f["txtTenDangNhap"].ToString();   //lấy chuỗi trong txtTenDangNhap

@@ -2,6 +2,7 @@
 
 <div class="header-top">
     <div class="container">
+        <div class="container_1">
         <div class="logo">
             <a href="@Url.Action("Index", "Home")">
                 <img src="~/Content/images/logogo.jpg" alt="Logo" class="logo-img" />
@@ -13,7 +14,7 @@
             <div class="search">
                 <form class="formsearch">
                     <input class="TimKiem" type="text" name="sTuKhoa" value="Từ Khóa " onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Từ Khóa';}">
-                    <input type="submit" value="Tìm kiếm">
+                    <input id="btn_search" type="submit" value="Tìm kiếm">
                 </form>
             </div>
         }
@@ -24,11 +25,11 @@
                     ThanhVien tv = (ThanhVien)Session["TaiKhoan"];     //ép kiểu từ biến session thành biến tv để lấy ra thông tin
                     if (tv.MaLoaiTV == 1)
                     {
-                     <li style="display:inline;"><a class="lock" href="@Url.Action("Index", "Admin")">Trang quản lý</a></li>
+                     <li style="display:inline;"><a href="@Url.Action("Index", "Admin")">Trang quản lý</a></li>
                     }
 
                     <li style="display:inline; color:white; font-size:17px;">Chào @tv.HoTen </li>
-                    <li><a class="lock" href="@Url.Action("DangXuat", "Home")">Đăng xuất</a>  </li>
+                    <li><a  href="@Url.Action("DangXuat", "Home")">Đăng xuất</a>  </li>
                     @*@Html.ActionLink("Đăng xuất", "DangXuat", "Home", new { @class = "lock" })*@
                 }
                 else
@@ -40,6 +41,7 @@
             </ul>
             <!--chèn partial view giỏ hàng vào layout (tách icon giỏ hàng sang 1 partial view mới)-->
             @Html.Action("GioHangPartial", "GioHang")
+        </div>
         </div>
     </div>
 </div>
@@ -76,53 +78,46 @@
                      }
                 </form>
         </div>
-        <div class="login-form" id="login-form">
-            <div style="clear:both;text-align:right;margin-bottom:0">
-
-            </div>
-            <h2>Đăng nhập</h2>
-            <div class="form-info">
-                <!--Dùng ajax để hiển thị thông báo khi đăng nhập-->
-                    @using (Ajax.BeginForm("DangNhap", "Home", new AjaxOptions { HttpMethod = "POST", InsertionMode = InsertionMode.Replace, UpdateTargetId = "ThongBao" }))
-                    {
-                        <input type="text" class="email" name="txtTenDangNhap" placeholder="Tên đăng nhập" required="" />
-                        <input type="password" class="password" name="txtMatKhau" placeholder="Mật khẩu" required="" />
-                        <p><a href="#">Quên mật khẩu?</a></p>
-                        <h3 id="ThongBao" style="font-weight:bold; color:crimson; text-align:left"></h3>
-                        <ul class="login-buttons">
-                            <li><input type="submit" class="btn-summit" value="Đăng nhập" style="height: 60px; width: 150px;" /></li>
-                            <li><a href="#" class="btn-summit hvr-sweep-to-left" style="min-width: 150px; height: 60px; font-size: 16px; text-decoration:none">đăng ký</a></li>
-                        </ul>
-                     }
-                </div>
-
-            </div>
+        
     </div>
 </div>
 
 <style>
-    .container{
-        display : flex;
-        justify-content:space-around;
-        width:80%;
-    }
-
-    .search{
-        display:flex;
-        align-items:center; 
-        width:500px;
-        font-size:18px;
-        margin-top:20px;
-    }
-    .formsearch{
-        width :80%;
+   .container_1{
+       display:flex;
+       justify-content:space-around;
+       align-items:center;
+   }
+    .container_1 form{
         margin:0;
+        display:flex;
+        justify-content:center;
+        height:60%;
+        width:100%;
     }
-        .search .TimKiem {
-        color: #000000;
-        width :100%;
-        font-weight: inherit !important;
+    .container_1 form .search {
+        font-size:16px;
+        border-radius: 10px;
+        margin: 0;
+        height: 100%;
+        width: 80%;
     }
+    .container_1 form ul{
+        display:flex;
+        justify-content:center;
+        height: 100%;
+    }
+    .container_1 form ul {
+        height: 100%;
+    }
+    .container_1 form ul li a{
+        width:30%;
+        height: 100%;
+    }
+     .container_1 form .search #btn_search {
+            border-radius:0 10px 10px 0;
+            height: 100%;
+     }
 
     #close-form {
         color: white;
