@@ -134,9 +134,6 @@ namespace WebsiteBanHang.Controllers
             return Content("Tài khoản hoặc mật khẩu không chính xác.");
         }
 
-        
-
-
         public ActionResult DangXuat()
         {
             Session["TaiKhoan"] = null; //thiết lập session là null
