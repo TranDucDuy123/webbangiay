@@ -2093,6 +2093,7 @@
     <Content Include="Content\HinhAnhSP\xps-13_black_open-up-left-v2.png" />
     <Content Include="Content\images\11.jpg" />
     <Content Include="Content\images\12.jpg" />
+    <Content Include="Content\images\anhbia.jpg" />
     <Content Include="Content\images\hero-bg.jpg" />
     <Content Include="Content\images\lo.png" />
     <Content Include="Content\images\lo1.png" />
@@ -2102,6 +2103,7 @@
     <Content Include="Content\images\login-img.jpg" />
     <Content Include="Content\images\logo.jpg" />
     <Content Include="Content\images\logo.png" />
+    <Content Include="Content\images\logogo.jpg" />
     <Content Include="Content\images\pi1.jpg" />
     <Content Include="Content\images\pi5.jpg" />
     <Content Include="Content\images\signup-img.jpg" />

@@ -2,16 +2,16 @@
 
 <div class="header-top">
     <div class="container">
-        <div class="logo centered-logo">
+        <div class="logo">
             <a href="@Url.Action("Index", "Home")">
-                <img src="~/Content/images/logo.png" alt="Logo" class="logo-img" />
+                <img src="~/Content/images/logogo.jpg" alt="Logo" class="logo-img" />
             </a>
         </div>
         @* Tạo form submit về action tìm kiếm *@
         @using (Html.BeginForm("LayTuKhoaTimKiem", "TimKiem"))
         {
             <div class="search">
-                <form>
+                <form class="formsearch">
                     <input class="TimKiem" type="text" name="sTuKhoa" value="Từ Khóa " onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Từ Khóa';}">
                     <input type="submit" value="Tìm kiếm">
                 </form>
@@ -24,26 +24,23 @@
                     ThanhVien tv = (ThanhVien)Session["TaiKhoan"];     //ép kiểu từ biến session thành biến tv để lấy ra thông tin
                     if (tv.MaLoaiTV == 1)
                     {
-                        <li style="display:inline;"><a class="lock" href="@Url.Action("Index", "Admin")">Trang quản lý</a></li>
+                     <li style="display:inline;"><a class="lock" href="@Url.Action("Index", "Admin")">Trang quản lý</a></li>
                     }
 
-                    <li style="display:inline; color:white; font-size:17px; margin-right:15px;">Chào @tv.HoTen </li>
+                    <li style="display:inline; color:white; font-size:17px;">Chào @tv.HoTen </li>
                     <li><a class="lock" href="@Url.Action("DangXuat", "Home")">Đăng xuất</a>  </li>
                     @*@Html.ActionLink("Đăng xuất", "DangXuat", "Home", new { @class = "lock" })*@
                 }
                 else
                 {
-                    <li style="display:inline;"><a id="btnDangNhap" class="lock" href="#">Đăng nhập</a></li>
-                    <li style="display:inline;"><a class="lock" href="@Url.Action("DangKy", "Home")">Đăng ký</a></li>
+                    <li"><a class="thea" id="btnDangNhap" href="#">Đăng nhập</a></li>
+                    <li"><a class="thea" href="@Url.Action("DangKy", "Home")">Đăng ký</a></li>
                 }
-
 
             </ul>
             <!--chèn partial view giỏ hàng vào layout (tách icon giỏ hàng sang 1 partial view mới)-->
             @Html.Action("GioHangPartial", "GioHang")
-            <div class="clearfix"> </div>
         </div>
-        <div class="clearfix"> </div>
     </div>
 </div>
 
@@ -59,7 +56,7 @@
         <div id="wrapper">
             <form action="" id="form-login">
                 <span id="close-form" class="btn btn-danger">X</span>
-                <h1 class="form-heading">Form đăng nhập</h1>
+                <h1 class="form-heading">Đăng nhập</h1>
                     @using (Ajax.BeginForm("DangNhap", "Home", new AjaxOptions { HttpMethod = "POST", InsertionMode = InsertionMode.Replace, UpdateTargetId = "ThongBao" }))
                     {
                     <div class="form-group">
@@ -104,19 +101,57 @@
 </div>
 
 <style>
-    .search .TimKiem {
+    .container{
+        display : flex;
+        justify-content:space-around;
+        width:80%;
+    }
+
+    .search{
+        display:flex;
+        align-items:center; 
+        width:500px;
+        font-size:18px;
+        margin-top:20px;
+    }
+    .formsearch{
+        width :80%;
+        margin:0;
+    }
+        .search .TimKiem {
         color: #000000;
+        width :100%;
         font-weight: inherit !important;
     }
 
     #close-form {
         color: white;
-        position : absolute;
-        top : 10px;
-        right :10px;
-        border-radius : 50%;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        border-radius: 50%;
     }
-
+    .thea {
+        margin: 0 10px 0 10px;
+        text-decoration: none;
+        color: white;
+        height: 100%;
+        text-align: center;
+        font-size :18px;
+        height:100%;
+    }
+    .header-left{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        width: 30%; 
+    }
+    .header-left ul{
+    }
+    .header-left ul li {
+        height :100%;
+        text-align:center;
+    }
     #popup_login {
         position: fixed;
         top: 0;
@@ -155,7 +190,7 @@
 
     .header-top {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
         position: relative;
         padding: 10px 0; /* Giữ header gọn */
@@ -163,7 +198,7 @@
     }
 
     .centered-logo {
-        margin: auto; /* Đảm bảo logo nằm giữa */
+        width:20%;
     }
 
     .logo-img {
