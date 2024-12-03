@@ -28,8 +28,8 @@
     <br />
     <div id="popup_login">
         <div class="login-form" id="login-form">
-            <div style="clear:both;text-align:right;margin-bottom:0">
-                <span id="close-form" class="btn btn-danger">X</span>
+            <div id="close_div">
+                <span id="close_form" class="btn btn-danger">X</span>
             </div>
             <h2>Đăng nhập</h2>
             <div class="form-info">
@@ -39,10 +39,10 @@
 
                     <input type="text" class="email" name="txtTenDangNhap" placeholder="Tên đăng nhập" required="" />
                     <input type="password" class="password" name="txtMatKhau" placeholder="Mật khẩu" required="" />
-                    <p><a href="#">Quên mật khẩu?</a></p>
-                    <h3 id="ThongBao" style="font-weight:bold; color:crimson; text-align:left"></h3>
-                    <div class="d-flex justify-content-center align-center"  style="width : 100%">
-                        <a><input class="btn-summit hvr-sweep-to-left text-center" type="submit" value="Đăng nhập" style="height: 50px; font-size: 16px;" /></a>
+                    <p style="width:100%; text-align:center;"><a href="#">Quên mật khẩu?</a></p>
+                    <h3 id="ThongBao" style="font-weight:bold; color:crimson; text-align:center"></h3>
+                    <div class="d-flex justify-content-center align-center"  style="width : 100%;">
+                        <a style="width:100%;"><input class="btn-summit hvr-sweep-to-left text-center" type="submit" value="Đăng nhập" style="height: 50px; font-size: 16px;" /></a>
                     </div>
                 }
             </div>
@@ -84,7 +84,6 @@
         padding: 15px 60px;
         font-size: 1.1em;
         font-weight: 600;
-        margin-right: 27px;
         border-radius: 3px;
         -webkit-border-radius: 3px;
         -moz-border-radius: 3px;
@@ -92,14 +91,55 @@
         border: none;
         cursor: pointer;
     }
+    #login-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #ThongBao {
+        font-size: 12px;
+        text-align: center;
+    }
+    #close_div{
+        width:100%;
+        position:relative;
+    }
 
+    #close_form {
+        position: absolute;
+        top:-10px;
+        right:0;
+    }
 </style>
 
 <script type="text/javascript">
     $("#btnDangNhap").click(function () {
         $("#popup_login").show();
     });
-    $("#close-form").click(function () {
+    $("#close_form").click(function () {
         $("#popup_login").hide();
+    });
+    $(document).ready(function () {
+        $('form').submit(function (e) {
+            e.preventDefault(); // Ngừng hành động submit form mặc định
+
+            $.ajax({
+                type: 'POST',
+                url: '/Admin/DangNhapAdmin', // Địa chỉ Action controller
+                data: $(this).serialize(), // Dữ liệu form
+                success: function (response) {
+                    // Kiểm tra phản hồi từ server và thực hiện hành động reload
+                    if (response === "Đăng nhập thành công!") {
+                        window.location.reload(); // Reload trang khi đăng nhập thành công
+                    } else {
+                        $('#ThongBao').text(response); // Hiển thị thông báo lỗi (nếu có)
+                    }
+                },
+                error: function () {
+                    $('#ThongBao').text('Có lỗi xảy ra, vui lòng thử lại!'); // Thông báo lỗi khi có sự cố với Ajax
+                }
+            });
+        });
     });
 </script>

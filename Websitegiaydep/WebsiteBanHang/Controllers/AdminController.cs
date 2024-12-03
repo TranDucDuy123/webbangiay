@@ -76,7 +76,6 @@ namespace WebsiteBanHang.Controllers
 
                     Session["TaiKhoan"] = tv;
                     return RedirectToAction("Index");
-                    //đoạn script dùng để reload lại trang khi đăng nhập thành công
                 }
             }
             return Content("Tài khoản hoặc mật khẩu không chính xác.");
