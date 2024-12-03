@@ -43,52 +43,31 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         </div>
 
     </div>
+    <script src="~/Content/js/responsiveslides.min.js"></script>
+    <script>
+        $(function () {
+            $("#slider").responsiveSlides({
+                auto: true,
+                nav: true,
+                speed: 500,
+                namespace: "callbacks",
+                pager: true,
+            });
+        });
+    </script>
 
-
-    <div class="banner" style="background: url('/Content/images/bia.jpg') no-repeat; background-size: cover; width: 100%; background-position: center; min-height: 600px;">
-        <div class="container">
-            <script src="~/Content/js/responsiveslides.min.js"></script>
-            <script>
-                $(function () {
-                    $("#slider").responsiveSlides({
-                        auto: true,
-                        nav: true,
-                        speed: 500,
-                        namespace: "callbacks",
-                        pager: true,
-                    });
-                });
-            </script>
-            @*<div id="top" class="callbacks_container">
-                <ul class="rslides callbacks callbacks1" id="slider">
-                    <li id="callbacks1_s0" class="" style="display: block; float: none; position: absolute; opacity: 0; z-index: 1; transition: opacity 500ms ease-in-out 0s;">
-
-                        <div class="banner-text">
-                            <h3>Giày cao nam GOG nhập khẩu </h3>
-                            <p>Lựa chọn một đôi giày công sở đơn giản, lịch sự kết hợp với nhiều trang phục là tiêu chí lựa chọn của cánh đàn ông.</p>
-                            <a href="@Url.Action("SanPham","SanPham",new {@MaLoaiSP = 1, @MaNSX = 2})">Xem thêm</a>
-                        </div>
-
-                    </li>
-                    <li id="callbacks1_s1" class="callbacks1_on" style="float: left; position: relative; opacity: 1; z-index: 2; display: list-item; transition: opacity 500ms ease-in-out 0s;">
-
-                        <div class="banner-text">
-                            <h3>Giày buộc dây da bò HongKong nhập khẩu </h3>
-                            <p>Thương hiệu giày da HongKong- TAIWAN đã nổi tiếng rất nhiều năm về sự uy tín, chất lượng da giày luôn tốt nhất phân khúc giá</p>
-                            <a href="@Url.Action("SanPham","SanPham",new {@MaLoaiSP = 1, @MaNSX = 2})">Xem thêm</a>
-                        </div>
-                    </li>
-                    <li id="callbacks1_s2" class="" style="float: none; position: absolute; opacity: 0; z-index: 1; display: list-item; transition: opacity 500ms ease-in-out 0s;">
-                        <div class="banner-text">
-                            <h3>Giày buộc dây nam cao cấp; BD2277D</h3>
-                            <p>Giày buộc dây nam cao cấp; BD2277D nhập khẩu được làm trên chất liệu da bò mềm nguyên tấm 100%, phong cách thiết kế giày nam tối giản cực kỳ hợp với xu hướng giày công sở hiện nay</p>
-                            <a href="@Url.Action("SanPham","SanPham",new {@MaLoaiSP = 1, @MaNSX = 1})">Xem thêm</a>
-                        </div>
-                    </li>
-                </ul>
-                <a href="#" class="callbacks_nav callbacks1_nav prev">Previous</a><a href="#" class="callbacks_nav callbacks1_nav next">Next</a><ul class="callbacks_tabs callbacks1_tabs"><li class="callbacks1_s1"><a href="#" class="callbacks1_s1">1</a></li><li class="callbacks1_s2 callbacks_here"><a href="#" class="callbacks1_s2">2</a></li><li class="callbacks1_s3"><a href="#" class="callbacks1_s3">3</a></li></ul>
-            </div>*@
-
+    <div class="rslides callbacks callbacks1" id="slider">
+        <div class="banner" style="background: url('/Content/images/b1.jpg') no-repeat; background-size: contain; width: 100%; background-position: center; min-height: 600px;">
+        </div>
+        <div class="banner" style="background: url('/Content/images/b2.jpg') no-repeat; background-size: contain; width: 100%; background-position: center; min-height: 600px;">
+        </div>
+        <div class="banner" style="background: url('/Content/images/b1.jpg') no-repeat; background-size: contain; width: 100%; background-position: center; min-height: 600px;">
+        </div>
+        <div class="banner" style="background: url('/Content/images/b5.jpg') no-repeat; background-size: contain; width: 100%; background-position: center; min-height: 600px;">
+        </div>
+        <div class="banner" style="background: url('/Content/images/b4.jpg') no-repeat; background-size: contain; width: 100%; background-position: center; min-height: 600px;">
+        </div>
+        <div class="banner" style="background: url('/Content/images/b3.jpg') no-repeat; background-size: contain; width: 100%; background-position: center; min-height: 600px;">
         </div>
     </div>
 

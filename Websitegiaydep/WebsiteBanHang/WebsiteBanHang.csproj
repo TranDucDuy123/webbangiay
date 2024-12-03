@@ -2096,6 +2096,17 @@
     <Content Include="Content\images\11.jpg" />
     <Content Include="Content\images\12.jpg" />
     <Content Include="Content\images\anhbia.jpg" />
+    <Content Include="Content\images\b1.jpg" />
+    <Content Include="Content\images\b2.jpg" />
+    <Content Include="Content\images\b3.jpg" />
+    <Content Include="Content\images\b4.jpg" />
+    <Content Include="Content\images\b5.jpg" />
+    <Content Include="Content\images\banner1.png" />
+    <Content Include="Content\images\banner2.png" />
+    <Content Include="Content\images\banner3.png" />
+    <Content Include="Content\images\banner4.png" />
+    <Content Include="Content\images\banner5.png" />
+    <Content Include="Content\images\banner6.png" />
     <Content Include="Content\images\bia.jpg" />
     <Content Include="Content\images\hero-bg.jpg" />
     <Content Include="Content\images\lo.png" />
