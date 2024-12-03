@@ -14,18 +14,18 @@ namespace WebsiteBanHang.Controllers
     public class HomeController : Controller
     {
         QuanLyBanHangEntities db = new QuanLyBanHangEntities();
-        
+
         // GET: Home/Index
         public ActionResult Index()
         {
             //Lần lượt tạo các viewbag để lấy list sp từ csdl
             //List laptop mới
-            var lstLTM = db.SanPhams.Where(n => n.MaLoaiSP == 1 && n.Moi == 1 && n.DaXoa == false).ToList();
+            var lstLTM = db.SanPhams.Where(n => n.MaLoaiSP == 2 && n.Moi == 1 && n.DaXoa == false).ToList();
             //Gán vào viewbag
             ViewBag.ListLTM = lstLTM;
 
             //List PC mới
-            var lstPCM = db.SanPhams.Where(n => n.MaLoaiSP == 2 && n.Moi == 1 && n.DaXoa == false).ToList();
+            var lstPCM = db.SanPhams.Where(n => n.MaLoaiSP == 3 && n.Moi == 1 && n.DaXoa == false).ToList();
             //Gán vào viewbag
             ViewBag.ListPCM = lstPCM;
 
@@ -76,7 +76,7 @@ namespace WebsiteBanHang.Controllers
         }
 
         //Load câu hỏi để đưa vào dropdownlist
-        public List<string> LoadCauHoi()    
+        public List<string> LoadCauHoi()
         {
             List<string> lstCauHoi = new List<string>();    //tạo list câu hỏi chứa câu hỏi
             lstCauHoi.Add("Họ tên người cha bạn là gì?");
@@ -96,8 +96,6 @@ namespace WebsiteBanHang.Controllers
         [HttpPost]
         public ActionResult DangNhap(FormCollection f)
         {
-
-            //ktra tên dn và pass
             string taikhoan = f["txtTenDangNhap"].ToString();   //lấy chuỗi trong txtTenDangNhap
             string matKhau = f["txtMatKhau"].ToString();    //lấy chuỗi trong txtMatKhau
 
@@ -116,11 +114,15 @@ namespace WebsiteBanHang.Controllers
                     PhanQuyen(tv.TaiKhoan.ToString(), Quyen);
 
                     Session["TaiKhoan"] = tv;
-                    return Content(@"<script>window.location.reload()</script>");   //đoạn script dùng để reload lại trang khi đăng nhập thành công
+
+                    return Content("Đăng nhập thành công!");   //đoạn script dùng để reload lại trang khi đăng nhập thành công
                 }
             }
             return Content("Tài khoản hoặc mật khẩu không chính xác.");
         }
+
+
+
 
         public ActionResult DangXuat()
         {

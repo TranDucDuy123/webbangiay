@@ -1,5 +1,4 @@
 ﻿﻿@using WebsiteBanHang.Models
-
 <div class="header-top">
     <div class="container">
         <div class="container_1">
@@ -25,19 +24,20 @@
                     ThanhVien tv = (ThanhVien)Session["TaiKhoan"];     //ép kiểu từ biến session thành biến tv để lấy ra thông tin
                     if (tv.MaLoaiTV == 1)
                     {
-                     <li style="display:inline;"><a href="@Url.Action("Index", "Admin")">Trang quản lý</a></li>
+                        <li style="color:white;">Chào @tv.HoTen</li>
+                        <li><a href="@Url.Action("Index", "Admin")">Trang quản lý</a></li>
                     }
 
-                    <li style="display:inline; color:white; font-size:17px;">Chào @tv.HoTen </li>
-                    <li><a  href="@Url.Action("DangXuat", "Home")">Đăng xuất</a>  </li>
+                    <li id="btn_dx">
+                        <a href="@Url.Action("DangXuat", "Home")">Đăng xuất</a>
+                    </li>
                     @*@Html.ActionLink("Đăng xuất", "DangXuat", "Home", new { @class = "lock" })*@
                 }
                 else
                 {
-                    <li"><a class="thea" id="btnDangNhap" href="#">Đăng nhập</a></li>
-                    <li"><a class="thea" href="@Url.Action("DangKy", "Home")">Đăng ký</a></li>
+                    <li><a class="thea" id="btnDangNhap" href="#">Đăng nhập</a></li>
+                    <li><a class="thea" href="@Url.Action("DangKy", "Home")">Đăng ký</a></li>
                 }
-
             </ul>
             <!--chèn partial view giỏ hàng vào layout (tách icon giỏ hàng sang 1 partial view mới)-->
             @Html.Action("GioHangPartial", "GioHang")
@@ -59,7 +59,7 @@
             <form action="" id="form-login">
                 <span id="close-form" class="btn btn-danger">X</span>
                 <h1 class="form-heading">Đăng nhập</h1>
-                    @using (Ajax.BeginForm("DangNhap", "Home", new AjaxOptions { HttpMethod = "POST", InsertionMode = InsertionMode.Replace, UpdateTargetId = "ThongBao" }))
+                    @using (Ajax.BeginForm("DangNhap", "Home", new AjaxOptions { HttpMethod = "POST", InsertionMode = InsertionMode.Replace, UpdateTargetId = "ThongBao" }, htmlAttributes: new { id = "loginForm" }))
                     {
                     <div class="form-group">
                         <i class="far fa-user"></i>
@@ -72,8 +72,7 @@
                             <i class="far fa-eye"></i>
                         </div>
                     </div>
-                    <p><a href="#">Quên mật khẩu?</a></p>
-                    <h3 id="ThongBao" style="font-weight:bold; color:crimson; text-align:left"></h3>
+                    <h3 id="ThongBao" style="font-weight:bold; color:crimson; text-align:center"></h3>
                     <input type="submit" value="Đăng nhập" class="form-submit">
                      }
                 </form>
@@ -93,27 +92,30 @@
         display:flex;
         justify-content:center;
         height:60%;
-        width:100%;
+        width:60%;
     }
     .container_1 form .search {
         font-size:16px;
         border-radius: 10px;
         margin: 0;
-        height: 100%;
-        width: 80%;
-    }
-    .container_1 form ul{
-        display:flex;
-        justify-content:center;
-        height: 100%;
+        width: 50%;
     }
     .container_1 form ul {
-        height: 100%;
+        display: flex;
+        justify-content: flex-start; /* Đảm bảo các <li> nằm trên một dòng */
+        flex-wrap: nowrap; /* Không cho phép các <li> xuống dòng */
+        padding: 0;
+        margin: 0;
+        width: 100%; /* Đảm bảo <ul> chiếm toàn bộ chiều rộng */
     }
-    .container_1 form ul li a{
-        width:30%;
+
+    .container_1 form ul li {
+        flex: 1 0 30%; /* flex-grow: 1 (cho phép các <li> mở rộng), flex-shrink: 0 (không co lại), flex-basis: 30% (chiều rộng ban đầu) */
         height: 100%;
+        margin: 5px; /* Khoảng cách giữa các <li> */
+        box-sizing: border-box; /* Đảm bảo margin không ảnh hưởng đến kích thước */
     }
+
      .container_1 form .search #btn_search {
             border-radius:0 10px 10px 0;
             height: 100%;
@@ -135,29 +137,44 @@
         font-size :18px;
         height:100%;
     }
-    .header-left{
-        display:flex;
-        justify-content:center;
-        align-items:center;
-        width: 30%; 
+    .header-left {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        min-width: 20%;
+        max-width: 60%;
+        font-size: 12px;
+        position: relative
     }
-    .header-left ul{
+        .header-left ul{
+        width:100%;
+        height:100%;
+        justify-content:center;
     }
     .header-left ul li {
         height :100%;
         text-align:center;
     }
-    #popup_login {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(0,0,0,0.5);
-        z-index: 1000;
-        display: none;
-        text-align: center;
+  /*  #btn_dx{
+        position:relative;
     }
+        #btn_dx span{
+            position :absolute;
+            top: 100%;
+            left :0;
+            font:10px;
+        }*/
+        #popup_login {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.5);
+            z-index: 1000;
+            display: none;
+            text-align: center;
+        }
 
     .btn-summit:hover {
         background: rgba(54, 185, 204);
@@ -291,4 +308,29 @@
             }
         });
     });
+    $(document).ready(function () {
+        $('form').submit(function (e) {
+            e.preventDefault(); // Ngừng hành động submit form mặc định
+
+            $.ajax({
+                type: 'POST',
+                url: '/Home/DangNhap', // Địa chỉ Action controller
+                data: $(this).serialize(), // Dữ liệu form
+                success: function (response) {
+                    // Kiểm tra phản hồi từ server và thực hiện hành động reload
+                    if (response === "Đăng nhập thành công!") {
+                        window.location.reload(); // Reload trang khi đăng nhập thành công
+                    } else {
+                        $('#ThongBao').text(response); // Hiển thị thông báo lỗi (nếu có)
+                    }
+                },
+                error: function () {
+                    $('#ThongBao').text('Có lỗi xảy ra, vui lòng thử lại!'); // Thông báo lỗi khi có sự cố với Ajax
+                }
+            });
+        });
+    });
+
+
+
 </script>

@@ -1924,6 +1924,8 @@
     <Content Include="Content\fontawesome\webfonts\fa-brands-400.svg" />
     <Content Include="Content\fontawesome\webfonts\fa-regular-400.svg" />
     <Content Include="Content\fontawesome\webfonts\fa-solid-900.svg" />
+    <Content Include="Content\HinhAnhSP\113.jpg" />
+    <Content Include="Content\HinhAnhSP\114.jpg" />
     <Content Include="Content\HinhAnhSP\5432_5019467_dell_g5_15_se_2.png" />
     <Content Include="Content\HinhAnhSP\637092404010389299_dell-xps-15-7590-bac-1.png" />
     <Content Include="Content\HinhAnhSP\Alienware-25-Gaming-Monitor-AW2521HF.png" />
