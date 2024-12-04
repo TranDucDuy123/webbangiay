@@ -168,10 +168,11 @@ a.item_add {
 
 .head-top {
     padding: 1em 0;
+    display:flex;
+    justify-content:center;
 }
 /* start menu */
 .h_menu4 {
-    margin: 7px 0 0px;
     float: right;
 }
 

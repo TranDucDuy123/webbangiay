@@ -7,10 +7,27 @@
         font-size: 40px; /* Tăng kích thước chữ */
         font-weight: bold; /* Nếu muốn chữ đậm */
     }
+    .head-top .h_menu4 {
+        width: 100%;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+    .head-top .h_menu4 ul{
+        display:flex;
+        justify-content:center;
+        width:100%;
+        align-items:center;
+    }
+        .head-top .h_menu4 memenu {
+            width: 100%;
+            display:flex;
+            align-items: center;
+            justify-items:center;
+        }
 </style>
 <div class=" h_menu4">
     <ul class="memenu skyblue">
-        <li class="showhide" style="display:none;"><span class="title">Menu</span><span class="icon1"></span><span class="icon2"></span></li>
         <li class="active grid" style="display: inline; font-size: 18px;"><a class="color8" href="@Url.Action("Index","Home")">Home</a></li>
         <!-- Url.action trả về kiểu đường dẫn url tương ứng với controller và action : ~/Controllers/Home/Index-->
         @foreach (var groupItem in Model.GroupBy(n => n.LoaiSanPham))  //gom nhóm lại theo từng loại sp( là gom nhóm lại những cái trùng nhau)
@@ -22,6 +39,5 @@
                 </li>
             }
         }
-        
     </ul>
 </div>
