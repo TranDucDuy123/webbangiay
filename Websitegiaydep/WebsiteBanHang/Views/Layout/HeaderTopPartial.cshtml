@@ -24,10 +24,13 @@
                     ThanhVien tv = (ThanhVien)Session["TaiKhoan"];     //ép kiểu từ biến session thành biến tv để lấy ra thông tin
                     if (tv.MaLoaiTV == 1)
                     {
-                        <li style="color:white;">Chào @tv.HoTen</li>
+                        <li style="color:white; ">Chào @tv.HoTen</li>
                         <li><a href="@Url.Action("Index", "Admin")">Trang quản lý</a></li>
                     }
-                    <li style="color:white;margin-right:10px;">Chào @tv.HoTen</li>
+                    if (tv.MaLoaiTV == 3)
+                    { 
+                        <li style="color:white;margin-right:10px;">Chào @tv.HoTen</li>
+                    }
                     <li id="btn_dx">
                         <a href="@Url.Action("DangXuat", "Home")">Đăng xuất</a>
                     </li>
@@ -139,17 +142,16 @@
     }
     .header-left {
         display: flex;
-        justify-content: end;
+        justify-content: right;
         align-items: center;
-        min-width: 20%;
-        max-width: 60%;
+        width: 40%;
         font-size: 12px;
         position: relative
     }
-        .header-left ul{
+    .header-left ul{
         width:100%;
         height:100%;
-        justify-content:center;
+        justify-content:end;
     }
     .header-left ul li {
         height :100%;
