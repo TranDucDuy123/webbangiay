@@ -27,7 +27,7 @@
                         <li style="color:white;">Chào @tv.HoTen</li>
                         <li><a href="@Url.Action("Index", "Admin")">Trang quản lý</a></li>
                     }
-
+                    <li style="color:white;margin-right:10px;">Chào @tv.HoTen</li>
                     <li id="btn_dx">
                         <a href="@Url.Action("DangXuat", "Home")">Đăng xuất</a>
                     </li>
@@ -309,7 +309,7 @@
         });
     });
     $(document).ready(function () {
-        $('form').submit(function (e) {
+        $('#form-login').submit(function (e) {
             e.preventDefault(); // Ngừng hành động submit form mặc định
 
             $.ajax({

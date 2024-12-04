@@ -34,7 +34,7 @@
             <h2>Đăng nhập</h2>
             <div class="form-info">
                 <!--Dùng ajax để hiển thị thông báo khi đăng nhập-->
-                @using (Ajax.BeginForm("DangNhapAdmin", "Admin", new AjaxOptions { HttpMethod = "POST", InsertionMode = InsertionMode.Replace, UpdateTargetId = "ThongBao" }))
+                @using (Ajax.BeginForm("DangNhapAdmin", "Admin", new AjaxOptions { HttpMethod = "POST", InsertionMode = InsertionMode.Replace, UpdateTargetId = "ThongBao" }, htmlAttributes: new { id = "loginFormAdmin" }))
                 {
 
                     <input type="text" class="email" name="txtTenDangNhap" placeholder="Tên đăng nhập" required="" />
@@ -121,7 +121,7 @@
         $("#popup_login").hide();
     });
     $(document).ready(function () {
-        $('form').submit(function (e) {
+        $('#loginFormAdmin').submit(function (e) {
             e.preventDefault(); // Ngừng hành động submit form mặc định
 
             $.ajax({

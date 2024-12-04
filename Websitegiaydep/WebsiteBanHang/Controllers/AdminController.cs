@@ -75,7 +75,7 @@ namespace WebsiteBanHang.Controllers
                     PhanQuyen(tv.TaiKhoan.ToString(), Quyen);
 
                     Session["TaiKhoan"] = tv;
-                    return RedirectToAction("Index");
+                    return Content("Đăng nhập thành công!");
                 }
             }
             return Content("Tài khoản hoặc mật khẩu không chính xác.");
