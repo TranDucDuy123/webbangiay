@@ -1,6 +1,6 @@
 USE [master]
 GO
-/****** Object:  Database [QuanLyBanHang]    Script Date: 12/4/2024 5:53:25 PM ******/
+/****** Object:  Database [QuanLyBanHang]    Script Date: 12/4/2024 7:24:41 PM ******/
 CREATE DATABASE [QuanLyBanHang]
  CONTAINMENT = NONE
  ON  PRIMARY 
@@ -82,7 +82,7 @@ ALTER DATABASE [QuanLyBanHang] SET QUERY_STORE = OFF
 GO
 USE [QuanLyBanHang]
 GO
-/****** Object:  Table [dbo].[BinhLuan]    Script Date: 12/4/2024 5:53:26 PM ******/
+/****** Object:  Table [dbo].[BinhLuan]    Script Date: 12/4/2024 7:24:41 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -98,7 +98,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[ChiTietDonDatHang]    Script Date: 12/4/2024 5:53:26 PM ******/
+/****** Object:  Table [dbo].[ChiTietDonDatHang]    Script Date: 12/4/2024 7:24:42 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -116,7 +116,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[ChiTietPhieuNhap]    Script Date: 12/4/2024 5:53:26 PM ******/
+/****** Object:  Table [dbo].[ChiTietPhieuNhap]    Script Date: 12/4/2024 7:24:42 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -133,7 +133,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[DonDatHang]    Script Date: 12/4/2024 5:53:26 PM ******/
+/****** Object:  Table [dbo].[DonDatHang]    Script Date: 12/4/2024 7:24:42 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -154,7 +154,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[KhachHang]    Script Date: 12/4/2024 5:53:26 PM ******/
+/****** Object:  Table [dbo].[KhachHang]    Script Date: 12/4/2024 7:24:42 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -172,7 +172,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[LoaiSanPham]    Script Date: 12/4/2024 5:53:26 PM ******/
+/****** Object:  Table [dbo].[LoaiSanPham]    Script Date: 12/4/2024 7:24:42 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -188,7 +188,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[LoaiThanhVien]    Script Date: 12/4/2024 5:53:26 PM ******/
+/****** Object:  Table [dbo].[LoaiThanhVien]    Script Date: 12/4/2024 7:24:42 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -203,7 +203,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[LoaiThanhVien_Quyen]    Script Date: 12/4/2024 5:53:26 PM ******/
+/****** Object:  Table [dbo].[LoaiThanhVien_Quyen]    Script Date: 12/4/2024 7:24:42 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -219,7 +219,7 @@ CREATE TABLE [dbo].[LoaiThanhVien_Quyen](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[NhaCungCap]    Script Date: 12/4/2024 5:53:26 PM ******/
+/****** Object:  Table [dbo].[NhaCungCap]    Script Date: 12/4/2024 7:24:42 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -237,7 +237,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[NhaSanXuat]    Script Date: 12/4/2024 5:53:26 PM ******/
+/****** Object:  Table [dbo].[NhaSanXuat]    Script Date: 12/4/2024 7:24:42 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -252,7 +252,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[PhieuNhap]    Script Date: 12/4/2024 5:53:26 PM ******/
+/****** Object:  Table [dbo].[PhieuNhap]    Script Date: 12/4/2024 7:24:42 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -268,7 +268,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Quyen]    Script Date: 12/4/2024 5:53:26 PM ******/
+/****** Object:  Table [dbo].[Quyen]    Script Date: 12/4/2024 7:24:42 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -282,7 +282,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[SanPham]    Script Date: 12/4/2024 5:53:26 PM ******/
+/****** Object:  Table [dbo].[SanPham]    Script Date: 12/4/2024 7:24:42 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -315,7 +315,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[ThanhVien]    Script Date: 12/4/2024 5:53:26 PM ******/
+/****** Object:  Table [dbo].[ThanhVien]    Script Date: 12/4/2024 7:24:42 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -620,9 +620,15 @@ Thể loại:  Thời trang
 Tình trạng:  Còn hàng
 ', N'sp3.jpg', 8, 50, 0, 0, 3, 1, 1, 2, 2, 0, N'sp3-1.jpg', N'sp3-2.jpg', N'sp3-3.jpg', N'sp3-4.jpg')
 GO
-INSERT [dbo].[SanPham] ([MaSP], [TenSP], [DonGia], [NgayCapNhat], [Chitiet], [MoTa], [HinhAnh], [SoLuongTon], [LuotXem], [LuotBinhChon], [LuotBinhLuan], [SoLuotMua], [Moi], [MaNCC], [MaNSX], [MaLoaiSP], [DaXoa], [HinhAnh1], [HinhAnh2], [HinhAnh3], [HinhAnh4]) VALUES (4, N'Giày sneaker nam da bò cao cấp; BD11028D', CAST(780000 AS Decimal(18, 0)), CAST(N'2018-11-05T10:34:28.000' AS DateTime), N'Đôi giày dép adidas Samba OG Wonder Quartz (Nữ) thêm một màu sắc hơi mờ của Wonder Quartz và Cloud White, cùng với đế cao su gum tối để silhout của Samba OG.
+INSERT [dbo].[SanPham] ([MaSP], [TenSP], [DonGia], [NgayCapNhat], [Chitiet], [MoTa], [HinhAnh], [SoLuongTon], [LuotXem], [LuotBinhChon], [LuotBinhLuan], [SoLuotMua], [Moi], [MaNCC], [MaNSX], [MaLoaiSP], [DaXoa], [HinhAnh1], [HinhAnh2], [HinhAnh3], [HinhAnh4]) VALUES (4, N'Giày sneaker Samba OG', CAST(780000 AS Decimal(18, 0)), CAST(N'2018-11-05T10:34:28.000' AS DateTime), N'Đôi giày dép adidas Samba OG Wonder Quartz (Nữ) thêm một màu sắc hơi mờ của Wonder Quartz và Cloud White, cùng với đế cao su gum tối để silhout của Samba OG.
 
-Màu gum tốicontra màu Wonder Quartz sáng không làm phân tâm từ thiết kế Samba OG cổ điển. Phần trên được làm hoàn toàn từ da mịn, cho đôi giày dép một cảm giác cao cấp. Căn bản là Cloud White, nhưng Wonder Quartz trên vạch 3-Stripes serrated. Both phần chỉ gót và vân toebox T-molded đều có một tông màu sẫm nhẹ, hợp với các màu khác.', N'Giày Adidas t? m? t?ng chi ti?t, ch?t lư?ng cao v?i công ngh? tiên ti?n.', N'sp4.jpg', 14, 12, 0, 0, 3, 1, 1, 2, 3, 0, N'sp4-1.jpg', N'sp4-2.jpg', N'sp4-3.jpg', N'sp4-4.jpg')
+Màu gum tốicontra màu Wonder Quartz sáng không làm phân tâm từ thiết kế Samba OG cổ điển. Phần trên được làm hoàn toàn từ da mịn, cho đôi giày dép một cảm giác cao cấp. Căn bản là Cloud White, nhưng Wonder Quartz trên vạch 3-Stripes serrated. Both phần chỉ gót và vân toebox T-molded đều có một tông màu sẫm nhẹ, hợp với các màu khác.', N'Dáng regular fit
+Có dây giày
+Thân giày bằng da và da lộn
+Lớp lót bằng vải dệt
+Đế ngoài bằng cao su
+Màu sản phẩm: Cloud White / Wonder Quartz / Wonder White
+Mã sản phẩm: IH2751', N'sp4.jpg', 14, 12, 0, 0, 3, 1, 1, 2, 3, 0, N'sp4-1.jpg', N'sp4-2.jpg', N'sp4-3.jpg', N'sp4-4.jpg')
 GO
 INSERT [dbo].[SanPham] ([MaSP], [TenSP], [DonGia], [NgayCapNhat], [Chitiet], [MoTa], [HinhAnh], [SoLuongTon], [LuotXem], [LuotBinhChon], [LuotBinhLuan], [SoLuotMua], [Moi], [MaNCC], [MaNSX], [MaLoaiSP], [DaXoa], [HinhAnh1], [HinhAnh2], [HinhAnh3], [HinhAnh4]) VALUES (5, N'Giày buộc dây nam da bò mạnh mẽ BD23055D', CAST(450000 AS Decimal(18, 0)), CAST(N'2018-11-05T10:34:28.000' AS DateTime), N'Mô tả:Giày buộc dây nam da bò mạnh mẽ; BD23055D sẽ là người bạn đồng hành hoàn hảo của đôi chân bạn trong cách se lạnh của đông xuân. Với chất da thật 100% bền bỉ, đế cao su kép, kiểu cách hoàn thiện tuyệt mỹ. BD23055D sẽ rất thích hợp để đi coffee, đi tiệc sinh nhật, đi học, đi làm và có thể kết hợp mọi trang phục như jeans T shirt, kaki, joggers, .. #Q
 Thể loại:  Thời trang
@@ -641,7 +647,7 @@ INSERT [dbo].[SanPham] ([MaSP], [TenSP], [DonGia], [NgayCapNhat], [Chitiet], [Mo
 </div>
 <div class="VYmrqq"><label class="zgeHL-">Dịp</label>
 <div>Thể thao</div>
-</div>', N'sp15.jpg', 4, 12, 0, 0, 3, 1, 2, 1, 2, 0, N'sp15-1.jpg', N'sp15-2.jpg', N'sp15-3.jpg', N'sp15-4.jpg')
+</div>', N'555.jpg', 4, 12, 0, 0, 3, 1, 2, 1, 2, 0, N'666.jpg', N'777.jpg', N'777.jpg', N'666.jpg')
 GO
 INSERT [dbo].[SanPham] ([MaSP], [TenSP], [DonGia], [NgayCapNhat], [Chitiet], [MoTa], [HinhAnh], [SoLuongTon], [LuotXem], [LuotBinhChon], [LuotBinhLuan], [SoLuotMua], [Moi], [MaNCC], [MaNSX], [MaLoaiSP], [DaXoa], [HinhAnh1], [HinhAnh2], [HinhAnh3], [HinhAnh4]) VALUES (23, N'Giày đá bóng Wika Galaxy', CAST(7800000 AS Decimal(18, 0)), CAST(N'2018-11-05T10:34:28.000' AS DateTime), N'Giày Slip On Vans Bee Check VN0A33TB9EH Màu Đen Trắng', N'<p>Gi&agrave;y Đ&aacute; B&oacute;ng Wika Galaxy Ch&iacute;nh h&atilde;ng🔥 ✔️Cam kết ch&iacute;nh h&atilde;ng 100% ✔️Bảo h&agrave;nh keo trọn đời ✔️Đổi trả miễn ph&iacute; trong 7 ng&agrave;y nếu sp lỗi</p>', N'sp3.jpg', 4, 12, 0, 0, 3, 1, 1, 1, 1, 0, N'sp3-1.jpg', N'sp3-2.jpg', N'sp3-3.jpg', N'sp3-4.jpg')
 GO
@@ -664,7 +670,7 @@ INSERT [dbo].[SanPham] ([MaSP], [TenSP], [DonGia], [NgayCapNhat], [Chitiet], [Mo
 <p>Ngo&agrave;i ra, hơn 50% vật liệu cấu tạo l&ecirc;n mẫu gi&agrave;y n&agrave;y được l&agrave;m từ vật liệu th&acirc;n thiện với m&ocirc;i trường gi&uacute;p bảo vệ tương lai.</p>
 <p>Với tất cả những g&igrave; tốt nhất m&agrave; adidas đ&atilde; trang bị tr&ecirc;n mẫu&nbsp;Ultraboost Light n&agrave;y, đ&acirc;y chắc chắn sẽ l&agrave; mẫu gi&agrave;y si&ecirc;u hot của adidas trong năm nay.</p>', N'giay-adidas-ultraboost-light-nu-hong-01.jpg', 2, 3, 3, 2, 2, 1, 5, 15, 1, 0, N'giay-adidas-ultraboost-light-nu-hong-02.jpg', N'giay-adidas-ultraboost-light-nu-hong-03.jpg', N'giay-adidas-ultraboost-light-nu-hong-05.jpg', N'giay-adidas-ultraboost-light-nu-hong-06.jpg')
 GO
-INSERT [dbo].[SanPham] ([MaSP], [TenSP], [DonGia], [NgayCapNhat], [Chitiet], [MoTa], [HinhAnh], [SoLuongTon], [LuotXem], [LuotBinhChon], [LuotBinhLuan], [SoLuotMua], [Moi], [MaNCC], [MaNSX], [MaLoaiSP], [DaXoa], [HinhAnh1], [HinhAnh2], [HinhAnh3], [HinhAnh4]) VALUES (147, N'Giày adidas Grand Court Base 2.0 Nam Nữ (Trắng Đen)', CAST(1490000 AS Decimal(18, 0)), CAST(N'2024-11-12T00:00:00.000' AS DateTime), N'* Myshoes.vn cam kết:  - Giày adidas Grand Court Base 2.0 chính hãng 100%. Phát hiện hàng Fake đền tiền gấp 2 lần giá sản phẩm.  - Myshoes.vn miễn phí giao hàng toàn quốc (với đơn hàng từ 500.000 vnđ).  - Đổi hàng trong 30 ngày. (Áp dụng với sản phẩm chưa sử dụng, nguyên vẹn như khi nhận hàng)  * Cách thức mua hàng:  - Khách hàng MUA HÀNG trên website hoặc gọi điện tới Hotline: 0973 711 868 để được tư vấn. - Khách hàng sẽ nhận được sản phẩm sau 1 - 3 ngày kể từ khi đặt hàng.', N'<p><em>Gi&agrave;y adidas Grand Court Base 2.0&nbsp;phi&ecirc;n bản n&acirc;ng cấp rất được ưu chuộng của d&ograve;ng&nbsp;Grand Court Base&nbsp;.Với những cải tiến mới khiến cho mẫu gi&agrave;y n&agrave;y bền đẹp v&agrave; năng động hơn kh&aacute; nhiều.</em></p>
+INSERT [dbo].[SanPham] ([MaSP], [TenSP], [DonGia], [NgayCapNhat], [Chitiet], [MoTa], [HinhAnh], [SoLuongTon], [LuotXem], [LuotBinhChon], [LuotBinhLuan], [SoLuotMua], [Moi], [MaNCC], [MaNSX], [MaLoaiSP], [DaXoa], [HinhAnh1], [HinhAnh2], [HinhAnh3], [HinhAnh4]) VALUES (147, N'Giày adidas Grand Court Base 2 Nam Nữ (Trắng Đen)', CAST(1490000 AS Decimal(18, 0)), CAST(N'2024-11-12T00:00:00.000' AS DateTime), N'* Myshoes.vn cam kết:  - Giày adidas Grand Court Base 2.0 chính hãng 100%. Phát hiện hàng Fake đền tiền gấp 2 lần giá sản phẩm.  - Myshoes.vn miễn phí giao hàng toàn quốc (với đơn hàng từ 500.000 vnđ).  - Đổi hàng trong 30 ngày. (Áp dụng với sản phẩm chưa sử dụng, nguyên vẹn như khi nhận hàng)  * Cách thức mua hàng:  - Khách hàng MUA HÀNG trên website hoặc gọi điện tới Hotline: 0973 711 868 để được tư vấn. - Khách hàng sẽ nhận được sản phẩm sau 1 - 3 ngày kể từ khi đặt hàng.', N'<p><em>Gi&agrave;y adidas Grand Court Base 2.0&nbsp;phi&ecirc;n bản n&acirc;ng cấp rất được ưu chuộng của d&ograve;ng&nbsp;Grand Court Base&nbsp;.Với những cải tiến mới khiến cho mẫu gi&agrave;y n&agrave;y bền đẹp v&agrave; năng động hơn kh&aacute; nhiều.</em></p>
 <p>Phần upper được l&agrave;m từ da cao cấp, phần đế l&agrave;m từ cao su tự nhi&ecirc;n cực kỳ bền. Gi&agrave;y adidas Grand Court Base 2.0 chắc chắn sẽ l&agrave; một mẫu gi&agrave;y thời trang kh&ocirc;ng thể n&agrave;o bỏ qua được trong năm nay.</p>', N'113.jpg', 2, 3, 3, 2, 3, 1, 6, 16, 2, 0, N'giay-adidas-grand-court-base-2-nam-trang-den-03.jpg', N'giay-adidas-grand-court-base-2-nam-trang-den-02.jpg', N'giay-adidas-grand-court-base-2-nam-trang-den-04.jpg', N'giay-adidas-grand-court-base-2-nam-trang-den-05.jpg')
 GO
 SET IDENTITY_INSERT [dbo].[SanPham] OFF
